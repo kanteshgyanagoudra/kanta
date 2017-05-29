@@ -1,0 +1,14 @@
+
+I have a script that install the printer  using the printer installation dialog of the browser for test automation.
+
+The script enters a path to the file dialog and click on the ok button.
+
+The script runs prefect on my local machine.
+
+I'm using Runtime.getRuntime().exec // to execute the script remotely, it opens but doing nothing, meaning no interaction is being made with the file printer installation dialog.
+
+I use selenium and java to do this, this is the code:
+
+  driver.findElement(By.xpath("//a[contains(.,'norprinter9')]")).click();
+    Thread.sleep(3000);
+    Runtime.getRuntime().exec("C:\\Users\\Administrator\\Desktop\\AUTOIT\\K1.exe");  
